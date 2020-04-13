@@ -1,0 +1,12 @@
+.nav {
+  display: inline-flex;
+}
+
+.nav-link{
+  color: #FFF;
+  padding: 0 2em;
+}
+
+.nav-link:visited {
+  color: #FFF;
+}
