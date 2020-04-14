@@ -34,11 +34,11 @@ function CommandLine(props) {
       <p className="command-line__text">></p>
       <input
       className="command-line__input"
-      onChange={onChange} o
-      nKeyPress={enterCheck}
-      autoFocus="true"
+      onChange={onChange}
+      onKeyPress={enterCheck}
+      autoFocus={true}
       ref={ el => clInput = el }
-      spellCheck="false" />
+      spellCheck={false} />
     </div>
   )
 }
