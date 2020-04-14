@@ -16,10 +16,12 @@
   position: absolute;
   width: 100vw;
   height: 100vh;
+  z-index: 1;
 }
 
-.content-wrapped {
-  position: relative;
-  top: 8vh;
-  height: 92vh;
+.content-wrapper {
+  position: absolute;
+  width: 100vw;
+  top: 12vh;
+  height: 88vh;
 }

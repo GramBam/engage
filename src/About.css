@@ -1,0 +1,10 @@
+.about-text {
+  color: #FFF;
+  max-width: 40vw;
+  text-align: center;
+  margin: auto;
+  font-size: 18px;
+  padding: 20px;
+  letter-spacing: 2px;
+  line-height: 25px;
+}

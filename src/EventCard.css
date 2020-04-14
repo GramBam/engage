@@ -1,9 +1,16 @@
 .card {
-  width: 30vw;
+  width: 80vw;
+  max-width: 580px;
   border: 5px solid #FFF;
   margin: auto;
   display: flex;
   color: #FFF;
+  height: 15vh;
+  max-height: 165px;
+}
+
+.card__info-wrap {
+  width:50vw;
 }
 
 .card__title {
@@ -17,10 +24,33 @@
 
 .card__info {
   font-size: 12px;
-  list-style: none;
-  text-align: start;
+  text-align: center;
 }
 
 .card__info > * {
   margin: 8px 0;
 }
+
+@media only screen and (max-width: 540px) {
+  .card__title {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  .card__title {
+    font-size: 16px;
+  }
+
+  .card__info {
+    font-size: 11px;;
+  }
+}
+
+@media only screen and (max-height: 800px) {
+  .card {
+    height: 22vh;
+  }
+}
+
+
