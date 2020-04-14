@@ -15,7 +15,6 @@ function App() {
 
   React.useEffect(() => {
     const onKey = (e) => {
-      console.log(e);
       if(e.ctrlKey && e.key === '`') {
         setCommandHidden(value => !value);
       }
@@ -28,6 +27,7 @@ function App() {
 
   return (
     <div className="home">
+      <Particles params={ParticleParams} />
       <p className="title">ENGAGE PRODUCTIONS</p>
       <Nav />
       <Switch>
@@ -35,14 +35,13 @@ function App() {
         <Route path="/about" component={About} />
       </Switch>
       <CommandLine hidden={commandHidden}/>
-      <Particles params={params} />
     </div>
   );
 }
 
 export default App;
 
-const params = {
+const ParticleParams = {
   "particles": {
     "number": {
       "value": 69

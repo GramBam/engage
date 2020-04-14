@@ -1,5 +1,9 @@
 .nav {
-  display: inline-flex;
+  display: flex;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
 }
 
 .nav-link{
