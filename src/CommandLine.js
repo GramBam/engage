@@ -1,8 +1,14 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './CommandLine.css';
 
 function CommandLine(props) {
   const [inputValue, updateInput] = useState('');
+
+  //autofocus backup
+  let clInput;
+  useEffect(() => {
+    clInput.focus();
+  });
 
   const onChange = (e) => {
     updateInput(e.target.value.toLowerCase());
@@ -26,7 +32,13 @@ function CommandLine(props) {
   return (
     <div className="command-line" style={{display: props.hidden ? 'none' : 'flex'}}>
       <p className="command-line__text">></p>
-      <input className="command-line__input" onChange={onChange} onKeyPress={enterCheck} autoFocus spellCheck="false" />
+      <input
+      className="command-line__input"
+      onChange={onChange} o
+      nKeyPress={enterCheck}
+      autoFocus="true"
+      ref={ el => clInput = el }
+      spellCheck="false" />
     </div>
   )
 }
