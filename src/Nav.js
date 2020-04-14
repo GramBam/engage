@@ -7,8 +7,8 @@ import {
 function Nav() {
   return (
       <div className="nav">
-          <Link to="/events" className="nav-link">Events</Link>
-          <Link to="/about" className="nav-link">About</Link>
+          <Link to="/events" className="nav__link">Events</Link>
+          <Link to="/about" className="nav__link">About</Link>
       </div>
   )
 }

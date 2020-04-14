@@ -6,11 +6,11 @@
   transform: translateX(-50%);
 }
 
-.nav-link{
+.nav__link{
   color: #FFF;
   padding: 0 2em;
 }
 
-.nav-link:visited {
+.nav__link:visited {
   color: #FFF;
 }

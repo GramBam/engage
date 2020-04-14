@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './App.css';
 import Particles from 'react-particles-js';
 import Nav from './Nav';
@@ -13,9 +13,9 @@ import CommandLine from './CommandLine';
 function App() {
   const [commandHidden, setCommandHidden] = useState(true);
 
-  React.useEffect(() => {
+  useEffect(() => {
     const onKey = (e) => {
-      if(e.ctrlKey && e.key === '`') {
+      if (e.ctrlKey && e.key === '`') {
         setCommandHidden(value => !value);
       }
     }
@@ -26,15 +26,19 @@ function App() {
   }, [])
 
   return (
-    <div className="home">
+    <div className="main">
       <Particles params={ParticleParams} />
-      <p className="title">ENGAGE PRODUCTIONS</p>
-      <Nav />
-      <Switch>
-        <Route path="/events" component={Events} />
-        <Route path="/about" component={About} />
-      </Switch>
-      <CommandLine hidden={commandHidden}/>
+      <header>
+        <p className="title">ENGAGE PRODUCTIONS</p>
+        <Nav />
+      </header>
+      <div className="content-wrapper">
+        <Switch>
+          <Route path="/events" component={Events} />
+          <Route path="/about" component={About} />
+        </Switch>
+      </div>
+      <CommandLine hidden={commandHidden} />
     </div>
   );
 }

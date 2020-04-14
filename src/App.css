@@ -1,6 +1,7 @@
-.home {
+.main {
   text-align: center;
   position: relative;
+  height: 100vh;
 }
 
 .title {
@@ -15,4 +16,10 @@
   position: absolute;
   width: 100vw;
   height: 100vh;
+}
+
+.content-wrapped {
+  position: relative;
+  top: 8vh;
+  height: 92vh;
 }

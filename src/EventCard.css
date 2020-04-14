@@ -1,0 +1,26 @@
+.card {
+  width: 30vw;
+  border: 5px solid #FFF;
+  margin: auto;
+  display: flex;
+  color: #FFF;
+}
+
+.card__title {
+  font-size: 22px;
+}
+
+.card__img {
+  min-width: 130px;
+  width: 12vw;
+}
+
+.card__info {
+  font-size: 12px;
+  list-style: none;
+  text-align: start;
+}
+
+.card__info > * {
+  margin: 8px 0;
+}

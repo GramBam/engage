@@ -26,7 +26,7 @@ function CommandLine(props) {
   return (
     <div className="command-line" style={{display: props.hidden ? 'none' : 'flex'}}>
       <p className="command-line__text">></p>
-      <input className="command-line__input" onChange={onChange} onKeyPress={enterCheck} autoFocus />
+      <input className="command-line__input" onChange={onChange} onKeyPress={enterCheck} autoFocus spellCheck="false" />
     </div>
   )
 }
